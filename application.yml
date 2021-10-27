@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/Rachneet/kubernetes-argocd.git
     targetRevision: HEAD
     path: dev
   destination:
