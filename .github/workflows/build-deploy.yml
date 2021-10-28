@@ -60,7 +60,6 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
         run: |
           cd kustomize/base
-          kustomize edit set replicas demo-app=2
           kustomize edit set image ${{ secrets.DOCKER_HUB_USERNAME }}/simple-flask-app:latest=${{ secrets.DOCKER_HUB_USERNAME }}/test-app:latest
           cat kustomization.yaml
 
