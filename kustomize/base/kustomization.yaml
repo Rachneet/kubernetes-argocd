@@ -7,9 +7,9 @@ resources:
 - middleware.yaml
 namespace: default
 replicas:
-- count: 1
+- count: 2
   name: demo-app
 images:
 - name: rachneet4/simple-flask-app:latest
-  newName: rachneet4/simple-flask-app2
+  newName: rachneet4/test-app
   newTag: latest
