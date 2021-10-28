@@ -61,7 +61,7 @@ jobs:
         run: |
           cd kustomize/base
           kustomize edit set replicas demo-app=1
-          kustomize edit set image demo-app=${{ secrets.DOCKER_HUB_USERNAME }}/simple-flask-app2:latest
+          kustomize edit set image ${{ secrets.DOCKER_HUB_USERNAME }}/test-app:latest=${{ secrets.DOCKER_HUB_USERNAME }}/simple-flask-app2:latest
           cat kustomization.yaml
 
       - name: Commit files
