@@ -10,9 +10,6 @@ replicas:
 - count: 1
   name: demo-app
 images:
-- name: demo-app
-  newName: rachneet4/simple-flask-app2
-  newTag: latest
-- name: rachneet4/test-app:latest
+- name: rachneet4/simple-flask-app:latest
   newName: rachneet4/simple-flask-app2
   newTag: latest
