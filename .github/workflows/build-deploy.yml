@@ -60,7 +60,7 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
         run: |
           cd kustomize/base
-          kustomize edit set replicas demo-app=3
+          kustomize edit set replicas demo-app=1
           cat kustomization.yaml
 
       - name: Commit files
