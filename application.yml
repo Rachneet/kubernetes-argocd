@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Rachneet/kubernetes-argocd.git
     targetRevision: HEAD
-    path: configs
+    path: kustomize/base
   destination:
     server: https://kubernetes.default.svc
     namespace: default
