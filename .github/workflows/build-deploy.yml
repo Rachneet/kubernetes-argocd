@@ -59,7 +59,7 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
         run: |
-          cd configs
+          cd kustomize/base
           kustomize edit set replicas demo-app=3
           cat kustomization.yaml
 
