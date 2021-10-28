@@ -7,5 +7,5 @@ resources:
 - middleware.yaml
 namespace: default
 replicas:
-- count: 3
+- count: 1
   name: demo-app
