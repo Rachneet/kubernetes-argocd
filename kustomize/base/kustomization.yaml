@@ -9,7 +9,7 @@ namespace: default
 replicas:
 - count: 2
   name: demo-app
-images:
-- name: rachneet4/simple-flask-app
-  newName: rachneet4/test-app
-  newTag: latest
+#images:
+#- name: rachneet4/simple-flask-app
+#  newName: rachneet4/test-app
+#  newTag: latest
